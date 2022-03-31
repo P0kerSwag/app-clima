@@ -7,8 +7,13 @@ const api ={
 }
 
 function App() {
+  const dateBuilder = (d) => {
+    let months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    let days = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"];
+
+}
   return (
-    <div className="App">
+    <div className="App calor">
       <main>
         <div className="search-box">
           <input
@@ -16,6 +21,12 @@ function App() {
             className="search-bar"
             placeholder="Digite a cidade..."
           />
+          <div>
+            <div className='location-box'>
+              <div className='location'>Taubaté, Brasil</div>
+              <div className='date'>{dateBuilder(new Date())}</div>
+            </div>
+          </div>
         </div>
       </main>
 

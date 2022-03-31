@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&display=swap');
+
+
+*{ 
+  margin:0;
+  padding:0;
+  box-shadow: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Bebas Neue', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  background-image: url('./assets/fundofrio.PNG');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+
 }
 
-.App-header {
-  background-color: #282c34;
+main{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App.calor{
+  background-image: url('./assets/charizard.png');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main{
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.search-box{
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search-box .search-bar{
+  display: block;
+  width: 93%;
+  padding: 10px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  border-color: rgba(255,255,255,0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25;
+
+  box-shadow: 0 5px rgba(0,0,0, 0.2);
+  color: black;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255,255,255,0.75);
 }
